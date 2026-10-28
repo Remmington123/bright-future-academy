@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #123b66;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 24px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        button {
+            background: #123b66;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bright Future Academy</h1>
+        <p>Learning Today, Leading Tomorrow</p>
+    </header>
+
+    <main>
+        <h2>Welcome to Our School</h2>
+        <p>Discover our school, programmes and community.</p>
+
+        <button onclick="showMessage()">Contact Us</button>
+        <p id="message"></p>
+    </main>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Welcome! Please contact our school office.";
+        }
+    </script>
+</body>
+</html>
